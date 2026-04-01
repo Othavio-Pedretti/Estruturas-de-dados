@@ -1,0 +1,20 @@
+
+#include<iostream>
+#include<fstream>
+using namespace std;
+
+
+int main(){
+    int n;
+    ofstream tab;
+    tab.open("tabela.csv");
+    for(int i; i<100 ; i++){
+        tab << dec << i << ":"
+        << i * 10 << ":"
+        << uppercase << i << endl; 
+    };
+    tab.close();
+    
+    return 0;
+
+}
