@@ -48,4 +48,14 @@ namespace tree{
 
     }
 
+    void show2(node *root, std::string prefixo, int nivel){
+	if(!root)
+            return;
+            std::cout << std::string(nivel,' ')<<prefixo << root->value << std::endl;
+            show2(root->left,"/",nivel+1);
+            show2(root ->right,"\\",nivel+1);
+
+    }
+
+
 }
