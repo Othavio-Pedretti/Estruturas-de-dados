@@ -1,0 +1,9 @@
+digraph {
+	G;
+	F -> {F} [color=blue];
+	E -> {C} [color=blue];
+	B;
+	D;
+	C -> {DA} [color=blue];
+	A -> {BD} [color=blue];
+}
